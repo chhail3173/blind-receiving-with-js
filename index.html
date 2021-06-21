@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blind Receiving</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- header  -->
+    <header>
+      <p>TOR/LOU > Dell > Dell WUR</p>
+      <h2>Blind Receiving</h2>
+    </header>
+
+    <!-- record tracking task pannel -->
+    <div class="rt--taskpanel margin-pannel">
+      <!-- rt--header  -->
+      <div class="rt--header expandable flex">
+        <div>
+          <i class="far fa-file-alt bgColor"></i>
+          <span class="bgColor">Record Tracking Number</span>
+        </div>
+        <i class="rt--glass far fa-hourglass"></i>
+      </div>
+
+      <!-- rt--content  -->
+      <div class="content rt--content bgColor">
+        <p class="bgColor"><i class="bgColor">Record the Tracking Number</i></p>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Record Tracking</label>
+          <input
+            class="bgColor rt--input"
+            name="scan"
+            type="text"
+            placeholder="Scan #"
+          />
+        </div>
+        <button class="completeBtn rt--btn" disabled>Complete</button>
+      </div>
+    </div>
+
+    <!-- customer details task pannel -->
+    <div class="cd--taskpanel margin-pannel">
+
+      <!-- cd--header  -->
+      <div class="cd--header expandable flex">
+        <div>
+          <i class="far fa-file-alt bgColor"></i>
+          <span class="bgColor">Customer Details</span>
+        </div>
+        <i class="cd--glass far fa-hourglass bgColor"></i>
+      </div>
+
+      <!-- cd--content  -->
+      <div class="content cd--content bgColor hidden">
+        <p class="bgColor">
+          <i class="bgColor">Record the Customer’s details</i>
+        </p>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">First Name</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Last Name</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Address 1</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Address 2</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">City</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">State</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">ZIP</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Phone</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">SYS Model</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Root Cause</label>
+          <input class="bgColor" type="text" placeholder="Enter text" />
+        </div>
+        <button class="completeBtn">Complete</button>
+      </div>
+    </div>
+
+    <!-- unit details task pannel  -->
+    <div class="ud--taskpanel margin-pannel">
+
+      <!-- ud--header  -->
+      <div class="ud--header expandable flex">
+        <div>
+          <i class="far fa-file-alt bgColor"></i>
+          <span class="bgColor">Unit Details</span>
+        </div>
+        <i class="ud--glass far fa-hourglass bgColor"></i>
+      </div>
+
+      <!-- ud--content  -->
+      <div class="content ud--content bgColor hidden">
+        <p class="bgColor"><i class="bgColor">Record the Unit details</i></p>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Part Number</label>
+          <input
+            class="bgColor rt--input"
+            type="text"
+            placeholder="Enter Value"
+          />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Serial Number</label>
+          <input
+            class="bgColor rt--input"
+            type="text"
+            placeholder="Enter Value"
+          />
+        </div>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">BCN</label>
+          <input
+            class="bgColor rt--input"
+            type="text"
+            placeholder="Enter BCN"
+          />
+        </div>
+        <button class="completeBtn rt--btn">Complete</button>
+      </div>
+    </div>
+
+    <!-- discrepancy reason task pannel  -->
+    <div class="dr--taskpanel margin-pannel">
+
+      <!-- dr--header  -->
+      <div class="dr--header expandable flex">
+        <div>
+          <i class="far fa-file-alt bgColor"></i>
+          <span class="bgColor">Discrepancy Reason</span>
+        </div>
+        <i class="dr--glass far fa-hourglass bgColor"></i>
+      </div>
+
+      <!-- dr--content  -->
+      <div class="content dr--content bgColor hidden">
+        <p class="bgColor">
+          <i class="bgColor">Record the Discrepancy Reason</i>
+        </p>
+        <div class="taskPannelDiv bgColor">
+          <label class="bgColor" for="cname">Reason</label>
+          <input
+            class="bgColor rt--input"
+            type="text"
+            placeholder="Enter text"
+          />
+        </div>
+        <button class="completeBtn rt--btn">Complete</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer--taskpanel">
+      <div class="dr--header expandable flex">
+        <button class="saveBtn"><i class="fas fa-save"></i>Save&Exit</button>
+        <button class="receiveBtn">Receive</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

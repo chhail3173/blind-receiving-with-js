@@ -1,0 +1,107 @@
+*{
+    background-color: #e9ecef;
+}
+.expandable {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .margin-pannel {
+    margin: 5px;
+  }
+ 
+  
+  .content {
+    padding: 0 18px;
+    /* display: none; */
+    overflow: hidden;
+    background-color: #fff;
+    color: black;
+    height: 100%;
+    /* width: 100%; */
+    margin-top: 1px;
+  }
+
+  .taskPannelDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .taskPannelDiv input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .content p{
+    color: #505050;
+  }
+  .bgColor {
+    background-color: #fff;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .completeBtn {
+    position: relative;
+    top: 10%;
+    left: 90%;
+    border: none;
+    padding: 10px 16px 10px 16px;
+    box-sizing: border-box;
+    margin: 5px;
+    background-color: #2626e7dc;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .completeBtn:disabled {
+    background-color: #272729dc;
+    color: black;
+
+  }
+  .cd--header:disabled{
+    background-color: black;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .task-border {
+    border-left: 1px solid blue;
+  }
+
+  .glassColor {
+   color: green;
+  }
+
+  /* footer  */
+
+  .footer--taskpanel {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+  }
+  .saveBtn {
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .receiveBtn {
+    background-color: blue;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    border: none;
+
+  }

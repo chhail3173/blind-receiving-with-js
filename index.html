@@ -19,24 +19,25 @@
       <h2>Blind Receiving</h2>
     </header>
 
+    <!-- sections  -->
     <!-- record tracking task pannel -->
-    <div class="rt--taskpanel margin-pannel">
+    <section class="rt--taskpanel margin-pannel">
       <!-- rt--header  -->
       <div class="rt--header expandable flex">
-        <div>
-          <i class="far fa-file-alt bgColor"></i>
-          <span class="bgColor">Record Tracking Number</span>
+        <div class="titleHeader">
+          <i class="far fa-file-alt"></i>
+          <p>Record Tracking Number</p>
         </div>
         <i class="rt--glass far fa-hourglass"></i>
       </div>
 
       <!-- rt--content  -->
-      <div class="content rt--content bgColor">
-        <p class="bgColor"><i class="bgColor">Record the Tracking Number</i></p>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Record Tracking</label>
+      <div class="content rt--content ">
+        <p><i>Record the Tracking Number</i></p>
+        <div class="taskPannelDiv">
+          <label for="cname">Record Tracking</label>
           <input
-            class="bgColor rt--input"
+            class="rt--input rt-scan"
             name="scan"
             type="text"
             placeholder="Scan #"
@@ -44,146 +45,150 @@
         </div>
         <button class="completeBtn rt--btn" disabled>Complete</button>
       </div>
-    </div>
+    </section>
+
 
     <!-- customer details task pannel -->
-    <div class="cd--taskpanel margin-pannel">
+    <section class="cd--taskpanel margin-pannel">
 
       <!-- cd--header  -->
       <div class="cd--header expandable flex">
-        <div>
-          <i class="far fa-file-alt bgColor"></i>
-          <span class="bgColor">Customer Details</span>
+        <div class="titleHeader">
+          <i class="far fa-file-alt"></i>
+          <p>Customer Details</p>
         </div>
-        <i class="cd--glass far fa-hourglass bgColor"></i>
+        <i class="cd--glass far fa-hourglass"></i>
       </div>
 
       <!-- cd--content  -->
-      <div class="content cd--content bgColor hidden">
-        <p class="bgColor">
-          <i class="bgColor">Record the Customer’s details</i>
+      <div class="content cd--content hidden">
+        <p>
+          <i>Record the Customer’s details</i>
         </p>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">First Name</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">First Name</label>
+          <input class="cd--input cd-fname" type="text" placeholder="First Name"/>
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Last Name</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label  for="cname">Last Name</label>
+          <input class="cd--input cd-lname" type="text" placeholder="Last Name" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Address 1</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">Address 1</label>
+          <input class="cd--input cd-add1" type="text" placeholder="Address 1" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Address 2</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">Address 2</label>
+          <input class="cd--input cd-add2" type="text" placeholder="Address 2" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">City</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">City</label>
+          <input class="cd--input" type="text" placeholder="City" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">State</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">State</label>
+          <input class="cd--input cd-city" type="text" placeholder="State" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">ZIP</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">ZIP</label>
+          <input class="cd--input cd-zip" type="text" placeholder="ZIP"/>
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Phone</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">Phone</label>
+          <input class="cd--input cd-phone" type="text" placeholder="Phone" minlength="10" maxlength="10"  pattern="[1-9]{1}[0-9]{9}" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">SYS Model</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">SYS Model</label>
+          <input class="cd--input cd-sys" type="text" placeholder="Enter text" />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Root Cause</label>
-          <input class="bgColor" type="text" placeholder="Enter text" />
+        <div class="taskPannelDiv">
+          <label for="cname">Root Cause</label>
+          <input class="cd--input cd-root" type="text" placeholder="Enter text" />
         </div>
         <button class="completeBtn">Complete</button>
       </div>
-    </div>
+    </section>
 
     <!-- unit details task pannel  -->
-    <div class="ud--taskpanel margin-pannel">
+    <section class="ud--taskpanel margin-pannel">
 
       <!-- ud--header  -->
       <div class="ud--header expandable flex">
-        <div>
-          <i class="far fa-file-alt bgColor"></i>
-          <span class="bgColor">Unit Details</span>
+        <div class="titleHeader">
+          <i class="far fa-file-alt"></i>
+          <p>Unit Details</p>
         </div>
-        <i class="ud--glass far fa-hourglass bgColor"></i>
+        <i class="ud--glass far fa-hourglass"></i>
       </div>
 
       <!-- ud--content  -->
-      <div class="content ud--content bgColor hidden">
-        <p class="bgColor"><i class="bgColor">Record the Unit details</i></p>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Part Number</label>
+      <div class="content ud--content hidden">
+        <p><i>Record the Unit details</i></p>
+        <div class="taskPannelDiv">
+          <label for="cname">Part Number</label>
           <input
-            class="bgColor rt--input"
+            class="rt--input ud-part"
             type="text"
             placeholder="Enter Value"
           />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Serial Number</label>
+        <div class="taskPannelDiv">
+          <label for="cname">Serial Number</label>
           <input
-            class="bgColor rt--input"
+            class="rt--input ud-serial"
             type="text"
             placeholder="Enter Value"
           />
         </div>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">BCN</label>
+        <div class="taskPannelDiv">
+          <label for="cname">BCN</label>
           <input
-            class="bgColor rt--input"
+            class="rt--input ud-bcn"
             type="text"
+            value="BCN0987654321"
             placeholder="Enter BCN"
+            disabled
           />
         </div>
         <button class="completeBtn rt--btn">Complete</button>
       </div>
-    </div>
+    </section>
 
     <!-- discrepancy reason task pannel  -->
-    <div class="dr--taskpanel margin-pannel">
+    <section class="dr--taskpanel margin-pannel">
 
       <!-- dr--header  -->
       <div class="dr--header expandable flex">
-        <div>
-          <i class="far fa-file-alt bgColor"></i>
-          <span class="bgColor">Discrepancy Reason</span>
+        <div class="titleHeader">
+          <i class="far fa-file-alt"></i>
+          <p>Discrepancy Reason</p>
         </div>
-        <i class="dr--glass far fa-hourglass bgColor"></i>
+        <i class="dr--glass far fa-hourglass"></i>
       </div>
 
       <!-- dr--content  -->
-      <div class="content dr--content bgColor hidden">
-        <p class="bgColor">
-          <i class="bgColor">Record the Discrepancy Reason</i>
+      <div class="content dr--content hidden">
+        <p>
+          <i>Record the Discrepancy Reason</i>
         </p>
-        <div class="taskPannelDiv bgColor">
-          <label class="bgColor" for="cname">Reason</label>
+        <div class="taskPannelDiv">
+          <label for="cname">Reason</label>
           <input
-            class="bgColor rt--input"
+            class="dr--input dr-reason"
             type="text"
             placeholder="Enter text"
+            name="reason"
           />
         </div>
-        <button class="completeBtn rt--btn">Complete</button>
+        <button class="completeBtn dr--btn" disabled>Complete</button>
       </div>
-    </div>
+    </section>
 
     <!-- footer -->
     <footer class="footer--taskpanel">
-      <div class="dr--header expandable flex">
+      <div class="footer--expandable footer--flex">
         <button class="saveBtn"><i class="fas fa-save"></i>Save&Exit</button>
-        <button class="receiveBtn">Receive</button>
+        <button class="receiveBtn" disabled>Receive</button>
       </div>
     </footer>
 
